@@ -18,7 +18,7 @@ public class SwaggerConfig {
 	@Bean
 	public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
-        		.select().apis(RequestHandlerSelectors.basePackage("com.codingTest.controllers"))
+        		.select().apis(RequestHandlerSelectors.basePackage("com.accionlabs.weatherApp.controllers"))
         		.paths(regex("/weather.*"))
                 .build();
     }
